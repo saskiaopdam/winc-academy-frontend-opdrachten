@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  background: white;
+}
+
+.body-grey {
+  background: grey;
+}
+.body-red {
+  background: red;
+}
+.body-orange {
+  background: orange;
+}
+.body-purple {
+  background: purple;
+}
+.body-green {
+  background: green;
+}
+
+.hamburger {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.colorName {
+  padding: 10px;
+}
+
+.colorName-hidden {
+  display: none;
+}
+.colorName-visible {
+  display: block;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.menu-closed {
+  position: relative;
+  left: -250px;
+  transition: left 500ms;
+}
+
+.menu-opened {
+  position: relative;
+  left: 0px;
+  transition: left 500ms;
+}
+
+.menuItem {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+}
+
+.menuItem + .menuItem {
+  margin-top: 5px;
+}
+
+.menuItem-grey {
+  background: grey;
+}
+.menuItem-red {
+  background: red;
+}
+.menuItem-orange {
+  background: orange;
+}
+.menuItem-purple {
+  background: purple;
+}
+.menuItem-green {
+  background: green;
+}
+.radioButton {
+  margin-right: 5px;
+}
