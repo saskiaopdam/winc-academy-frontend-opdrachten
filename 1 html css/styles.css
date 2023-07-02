@@ -1,0 +1,407 @@
+*	{
+    box-sizing: border-box;
+}
+
+html    {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #fffaf0;/*floralwhite*/
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+   
+h1, h2, h3 {
+    font-family: 'Zilla slab', serif;
+}
+
+h1  {
+    font-size: 3rem;
+}
+
+h2  {
+    font-size: 2rem;
+
+}
+
+h3  {
+    font-size: 1.25rem;
+}
+
+p   {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.button {
+    border: 0.5px solid #333;
+    box-shadow: 3px 3px #1e90ff;/*dodgerblue*/;
+    background-color: #fffaf0;/*floralwhite*/
+    color: #333;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.page-wrapper   {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto auto;
+    grid-template-areas:
+    " hero "
+    " main "
+    " footer "
+}
+
+.hero {
+    grid-area: hero;
+    padding: 32px;
+    border-bottom: 5px solid #1e90ff;/*dodgerblue*/;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    " hero-image hero-image "
+    " hero-title hero-title"
+    " hero-nav hero-social "
+}
+
+.hero-image {
+    grid-area: hero-image;
+    background-image: url("profielfoto.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero-title  {
+    grid-area: hero-title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-h1, .hero-h2, .hero-h3  {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 3rem;
+}
+
+.hero-nav   {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+    
+.hero-nav > a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero-social   {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+    
+.hero-social > a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #333;
+}
+
+main    {
+    grid-area: main;
+}
+
+.section    {
+    padding: 2rem;
+}
+
+.opleiding-grid, .projecten-grid, .about-grid, .contact-grid, .footer-flex {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.opleiding-grid    {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 32px;
+    grid-template-areas:
+    " opleiding-front "
+    " opleiding-back "
+    " opleiding-level "
+    " opleiding-link "
+}
+
+.opleiding-front {
+    grid-area: opleiding-front;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(5, 1fr);
+}
+
+.opleiding-front > h2   {
+    text-align: center;
+}
+
+.opleiding-back {
+    grid-area: opleiding-back;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(4, 1fr);
+}
+
+.opleiding-back > h2   {
+    text-align: center;
+}
+
+.opleiding-level {
+    grid-area: opleiding-level;
+    display: flex;
+    flex-direction: column;
+}
+
+.opleiding-level > h2   {
+    text-align: center;
+}
+
+.opleiding-level > p   {
+    text-align: center;
+}
+
+.opleiding-link    {
+    grid-area: opleiding-link;
+    display: flex;
+    justify-content: center;
+}
+
+.opleiding-skill  {
+    margin-top: 32px;
+    padding: 1rem;
+    border: 0.5px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opleiding-skill > ion-icon {
+    font-size: 4rem;
+    color: #1e90ff;/*dodgerblue*/
+}
+
+.opleiding-skill > p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: justify;
+}
+
+.projecten-grid  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 32px;
+}
+
+.project > img  {
+    width: 100%;
+}
+
+.project > h2   {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+}
+
+.project > h2 > a   {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 3px solid dodgerblue; 
+}
+
+.about-grid    {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, auto;
+    grid-gap: 32px;
+    grid-template-areas:
+    " about-text "
+    " about-video "
+    " about-link "
+}
+
+.about-text    {
+    grid-area: about-text;
+}
+
+.about-text > p {
+    text-align: justify;
+    margin-block-end: 0;
+}
+
+.about-video    {
+    grid-area: about-video;
+    min-height: 300px;
+}
+
+.about-video > iframe    {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.about-link {
+    grid-area: about-link;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-grid  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.label  {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input  {
+    display: block;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.textarea  {
+    display: block;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.input, .textarea  {
+    width: 100%;
+    border: none;
+}
+
+.social-icons   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons > a   {
+    text-decoration: none;
+    color: #1e90ff;/*dodgerblue*/
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.footer    {
+    grid-area: footer;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer > nav > a   {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid dodgerblue;
+}
+
+/* MEDIA QUERIES */
+
+/* medium devices */
+@media screen and (min-width: 768px)   {
+
+    .hero {
+        grid-area: hero;
+        padding: 32px;
+        border-bottom: 5px solid #1e90ff;/*dodgerblue*/;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-gap: 32px;
+        grid-template-areas:
+        " hero-image hero-image "
+        " hero-title hero-title"
+        " hero-nav hero-social "
+    }
+
+    .hero-image {
+        grid-area: hero-image;
+        background-image: url("profielfoto.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .hero-title  {
+        grid-area: hero-title;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-nav   {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .hero-social   {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }   
+
+    .opleiding-grid    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        " opleiding-front opleiding-back "
+        " opleiding-level opleiding-level "
+        " opleiding-link opleiding-link ";
+    }
+
+    .opleiding-back {
+        grid-template-rows: auto repeat(5, 1fr);
+    }
+
+    .projecten-grid  {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .about-grid    {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr, 1fr, auto;
+        grid-template-areas:
+        " . about-text . "
+        " . about-video . "
+        " . about-link . "
+    }
+
+    .contact-grid  {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+        " . form . ";
+    }
+
+    .contactformulier    {
+        grid-area: form;
+    }
+}
