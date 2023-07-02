@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@mixin standardNavlink($background) {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: $background;
+  transform: translateX(200px);
+  transition: transform 250ms linear; 
+}
+$transform-on-hover: translateX(0);
+
+@mixin standardBefore($content) {
+  font-family: "FontAwesome";
+  display: block;
+  float: left;
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  content: $content;
+}
+
+.social-media {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__blog {
+    @include standardNavlink(#e17b77);
+    &:hover {
+      transform: $transform-on-hover;
+    }
+    &::before {
+      @include standardBefore("\f5fc");
+    }
+  }
+  &__twitter {
+    @include standardNavlink(#00aced);
+    &:hover {
+      transform: $transform-on-hover;
+    }
+    &::before {
+      @include standardBefore("\f099");
+    }
+  }
+  &__linkedin {
+    @include standardNavlink(#007bb6);
+    &:hover {
+      transform: $transform-on-hover;
+    }
+    &::before {
+      @include standardBefore("\f0e1");
+    }
+  }
+  &__facebook {
+    @include standardNavlink(#3b5998);
+    &:hover {
+      transform: $transform-on-hover;
+    }
+    &::before {
+      @include standardBefore("\f39e");
+    }
+  }
+  &__github {
+    @include standardNavlink(#333);
+    &:hover {
+      transform: $transform-on-hover;
+    }
+    &::before {
+      @include standardBefore("\f09b");
+    }
+  }
+}
+
+  

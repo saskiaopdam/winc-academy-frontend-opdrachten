@@ -1,0 +1,115 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.social-media {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social-media__blog {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #e17b77;
+  transform: translateX(200px);
+  transition: transform 250ms linear;
+}
+.social-media__blog:hover {
+  transform: translateX(0);
+}
+.social-media__blog::before {
+  font-family: "FontAwesome";
+  display: block;
+  float: left;
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  content: "";
+}
+.social-media__twitter {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #00aced;
+  transform: translateX(200px);
+  transition: transform 250ms linear;
+}
+.social-media__twitter:hover {
+  transform: translateX(0);
+}
+.social-media__twitter::before {
+  font-family: "FontAwesome";
+  display: block;
+  float: left;
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  content: "";
+}
+.social-media__linkedin {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #007bb6;
+  transform: translateX(200px);
+  transition: transform 250ms linear;
+}
+.social-media__linkedin:hover {
+  transform: translateX(0);
+}
+.social-media__linkedin::before {
+  font-family: "FontAwesome";
+  display: block;
+  float: left;
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  content: "";
+}
+.social-media__facebook {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #3b5998;
+  transform: translateX(200px);
+  transition: transform 250ms linear;
+}
+.social-media__facebook:hover {
+  transform: translateX(0);
+}
+.social-media__facebook::before {
+  font-family: "FontAwesome";
+  display: block;
+  float: left;
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  content: "";
+}
+.social-media__github {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  transform: translateX(200px);
+  transition: transform 250ms linear;
+}
+.social-media__github:hover {
+  transform: translateX(0);
+}
+.social-media__github::before {
+  font-family: "FontAwesome";
+  display: block;
+  float: left;
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  content: "";
+}/*# sourceMappingURL=styles.css.map */
