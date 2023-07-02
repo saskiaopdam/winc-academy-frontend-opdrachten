@@ -1,0 +1,65 @@
+body {
+  /* ok */
+  font-family: sans-serif;
+  max-width: 500px;
+}
+
+#buttonToAddTask,/* ok */
+.buttonToEditTask {
+  /* ok */
+  margin-left: 10px;
+}
+
+#fieldToAddTask,/* ok */
+.fieldToEditTask {
+  /* ok */
+  size: 30;
+  /* background-color: thistle; */
+}
+
+#messageArea {
+  /* ok */
+  color: blue;
+  /* height: 18px; */
+}
+
+#listArea {
+  /* ok */
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  /* ok */
+  display: flex;
+}
+
+.checkbox {
+  /* ok */
+  flex: none;
+}
+/* checkbox stylen:
+-webkit-appearance: none;
+maar dan zie je ook het vinkje niet meer
+*/
+
+.todo {
+  /* ok */
+  margin-left: 10px;
+  flex: auto;
+}
+.bin {
+  /* ok */
+  color: red;
+  margin-left: 10px;
+  flex: none;
+}
+.lineThrough {
+  /* ok */
+  text-decoration: line-through;
+}
+
+.hidden {
+  /* ok */
+  display: none;
+}

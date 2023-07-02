@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  max-width: 500px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+p {
+  color: blue;
+}
+
+i {
+  float: right;
+  color: red;
+}
