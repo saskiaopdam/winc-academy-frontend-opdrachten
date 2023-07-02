@@ -1,0 +1,42 @@
+.Main {
+  flex-grow: 1;
+  background: rgb(79, 139, 201);
+  padding: 1em;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  color: white;
+  text-align: center;
+}
+
+.Main-body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Main-nav {
+  margin-bottom: 1em;
+}
+
+.Main-display {
+  flex-grow: 1;
+}
+
+.Main-form {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox > input {
+  margin-right: 0.5em;
+}
+
+.checkbox + .checkbox {
+  margin-left: 1em;
+}

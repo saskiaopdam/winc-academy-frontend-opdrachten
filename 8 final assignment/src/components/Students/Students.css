@@ -1,0 +1,19 @@
+.Students {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+}
+
+.Students-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 0 0.5em 0.5em 0.5em;
+}
+
+.Students-link:hover {
+  text-decoration: underline;
+  color: white;
+  opacity: 0.75;
+}
