@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+header,
+footer {
+  flex: none;
+  padding: 20px;
+}
+header {
+  padding: 20px;
+}
+main {
+  flex: auto;
+}
+h1 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+ul {
+  list-style-type: none;
+}
+ul#moviesSelectionArea,
+div#moviesSearchArea,
+ul#moviesDisplayArea {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+li {
+  margin: 10px;
+}
+footer {
+  text-align: center;
+  padding: 20px 20px 30px 20px;
+}
+input#searchField {
+  margin: 30px 0 20px 0;
+  padding: 5px;
+  text-align: center;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmzoeker</title>
+    <!-- volgorde script files doet ertoe -->
+    <script defer src="movies.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Filmzoeker</h1>
+      <nav>
+        <ul id="moviesSelectionArea">
+          <li class="movieFilter">
+            <input type="radio" id="recent" name="filter" value="recent" />
+            <label for="recent">Laatste Films, 2014 of nieuwer</label>
+          </li>
+          <li class="movieFilter">
+            <input type="radio" id="avenger" name="filter" value="avenger" />
+            <label for="avenger">Avenger Films</label>
+          </li>
+          <li class="movieFilter">
+            <input type="radio" id="x-men" name="filter" value="x-men" />
+            <label for="x-men">X-Men Films</label>
+          </li>
+          <li class="movieFilter">
+            <input type="radio" id="princess" name="filter" value="princess" />
+            <label for="princess">Princess Films</label>
+          </li>
+          <li class="movieFilter">
+            <input type="radio" id="batman" name="filter" value="batman" />
+            <label for="batman">Batman Films</label>
+          </li>
+          <!-- <li>
+                    <input type="radio" id="blabla" name="filter" value="blabla">
+                    <label for="blabla">Blabla Films</label>
+                </li> -->
+        </ul>
+        <div id="moviesSearchArea">
+          <input
+            type="text"
+            id="searchField"
+            name="search"
+            placeholder="zoek op filmtitel"
+            value=""
+            ;
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <ul id="moviesDisplayArea"></ul>
+    </main>
+    <footer><small>made by Saskia Opdam</small></footer>
+  </body>
+</html>
